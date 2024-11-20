@@ -1,0 +1,358 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="nk-block nk-block-lg">
+    <div class="card card-bordered">
+        <form class="nk-stepper stepper-init is-alter nk-stepper-s1" action="#" id="stepper-create-profile">
+            <div class="row g-0 col-sep col-sep-md col-sep-xl">
+                <div class="col-md-4 col-xl-4">
+                    <div class="card-inner">
+                        <ul class="nk-stepper-nav nk-stepper-nav-s1 stepper-nav is-vr">
+                            <li>
+                                <div class="step-item">
+                                    <div class="step-text">
+                                        <div class="lead-text">Profile Type</div>
+                                        <div class="sub-text">Choose Profile</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-item">
+                                    <div class="step-text">
+                                        <div class="lead-text">Customer Details</div>
+                                        <div class="sub-text">Enter the customer information</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-item">
+                                    <div class="step-text">
+                                        <div class="lead-text">Service Request Details</div>
+                                        <div class="sub-text">Enter service type</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="step-item">
+                                    <div class="step-text">
+                                        <div class="lead-text">LAN Request Info</div>
+                                        <div class="sub-text">Looking for more information</div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="step-item">
+                                    <div class="step-text">
+                                        <div class="lead-text">Completed</div>
+                                        <div class="sub-text">Review and Submit</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 col-xl-8">
+                    <div class="card-inner">
+                        <div class="nk-stepper-content">
+                            <div class="nk-stepper-steps stepper-steps">
+                                <div class="nk-stepper-step">
+                                    <h5 class="title mb-3">Choose Profile Type</h5>
+                                    <p>Account registration allows for remembering details about the user, product wish lists, preferences, interests, shipping and billing addresses, VAT number for </p>
+                                    <ul class="row g-3">
+                                        <li class="col-6">
+                                            <div class="custom-control custom-control-sm custom-radio pro-control custom-control-full">
+                                                <input type="radio" class="custom-control-input" name="cp1-profile-type" id="cp1-profile-personal" value="cp1-profile-personal" required>
+                                                <label class="custom-control-label" for="cp1-profile-personal">
+                                                    <span class="d-flex flex-column text-center px-sm-3">
+                                                        <em class="icon icon-circle icon-circle-lg bg-teal ni ni-user"></em>
+                                                        <span class="lead-text mb-1 mt-3">Personal Profile</span>
+                                                        <span class="sub-text">Prioritize and solve your tasks in short time cycles.</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="col-6">
+                                            <div class="custom-control custom-control-sm custom-radio pro-control custom-control-full">
+                                                <input type="radio" class="custom-control-input" name="cp1-profile-type" id="cp1-profile-corporate" value="cp1-profile-corporate" required>
+                                                <label class="custom-control-label" for="cp1-profile-corporate">
+                                                    <span class="d-flex flex-column text-center px-sm-3">
+                                                        <em class="icon icon-circle icon-circle-lg bg-orange ni ni-briefcase"></em>
+                                                        <span class="lead-text mb-1 mt-3">Corporate Profile</span>
+                                                        <span class="sub-text">Keep a constant workflow on independent tasks.</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nk-stepper-step">
+                                    <h5 class="title mb-4">Customer Details</h5>
+                                    <div class="row g-3">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-first-name">Company Name</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-first-name" name="cp1-first-name" placeholder="Company Name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-last-name">Company Address</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-last-name" name="cp1-last-name" placeholder="Company Address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-last-name">Coordinates (Lat, Long)</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-last-name" name="cp1-last-name" placeholder="Coordinates">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-last-name">Closest Landmark</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-last-name" name="cp1-last-name" placeholder="Closest Landmark">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-last-name">Contact Person</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-last-name" name="cp1-last-name" placeholder="Contact Person" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-last-name">Designation/Job Title</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-last-name" name="cp1-last-name" placeholder="Designation">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-last-name">Department</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-last-name" name="cp1-last-name" placeholder="Department">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-last-name">Mobile Number</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-last-name" name="cp1-last-name" placeholder="Mobile Number">
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-contact-email">Contact Email</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="email" class="form-control" id="cp1-contact-email" name="cp1-contact-email" placeholder="info@softnio.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                      <!--  <div class="col-12">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-profile-description">Description</label>
+                                                    <div class="form-control-wrap">
+                                                        <textarea class="form-control form-control-sm" id="cp1-profile-description" name="cp1-profile-description" placeholder="Write Profile Description" required></textarea>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        -->
+                                    </div>
+                                </div>
+                                <div class="nk-stepper-step">
+                                    <h5 class="title mb-3">Service Request Details</h5>
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Select Service Type</label>
+                                                <div class="form-control-wrap">
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Internet" required>
+                                                        <option value="01-10">Internet</option>
+                                                        <option value="10-20">10-20</option>
+                                                        <option value="20-30">20-30</option>
+                                                        <option value="30-50">30-50</option>
+                                                        <option value="50-100">50-100</option>
+                                                        <option value="above-100">Above 100</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">If Collaboration, Select power</label>
+                                                <div class="form-control-wrap">
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)" required>
+                                                        <option value="1KW">1KW</option>
+                                                        <option value="2KW">2KW</option>
+                                                        <option value="3KW">3KW</option>
+                                                        <option value="4KW">4KW</option>
+                                                        <option value="5KW">5KW</option>
+                                                        <option value="6KW">6KW</option>
+                                                        <option value="7KW">7KW</option>
+                                                        <option value="8KW">8KW</option>
+                                                        <option value="9KW">9KW</option>
+                                                        <option value="10KW">10KW</option>
+                                                        <option value="15KW">15KW</option>
+                                                        <option value="20KW">20KW</option>
+                                                        <option value="30KW">30KW</option>
+                                                        <option value="40KW">40KW</option>
+                                                        <option value="50KW">50KW</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">If Collaboration, Select space</label>
+                                                <div class="form-control-wrap">
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)" required>
+                                                        <option value="1U">1U</option>
+                                                        <option value="2U">2U</option>
+                                                        <option value="4U">4U</option>
+                                                        <option value="9U">9U</option>
+                                                        <option value="12U">12U</option>
+                                                        <option value="18U">18U</option>
+                                                        <option value="24U">24U</option>
+                                                        <option value="27U">27U</option>
+                                                        <option value="42U">42U</option>
+                                                        <option value="48U">48U</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Last mile mode of connection:</label>
+                                                <div class="form-control-wrap">
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)" required>
+                                                        <option value="1U">FIBER</option>
+                                                        <option value="2U">MICROWAVE</option>
+                                                        <option value="4U">FIBER OR MICROWAVE</option>
+                                                        <option value="9U">FIBER AND MICROWAVE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-name">If Microwave; confirm mast availability and height</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Interface type</label>
+                                                <div class="form-control-wrap">
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)" required>
+                                                        <option value="1U">ELECTRICAL</option>
+                                                        <option value="2U">OPTICAL</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nk-stepper-step">
+                                    <h5 class="title mb-3">Billing info</h5>
+                                    <p>Please fill up your billing info carefull for un-interfered service.</p>
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-name-on-card">Name On Card</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-name-on-card" name="cp1-name-on-card" placeholder="NAME" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-card-number">Card Number</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" minlength="12" maxlength="12" class="form-control" id="cp1-card-number" name="cp1-card-number" placeholder="2222 3333 4444 5555" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-card-exp-month">Expiration Date</label>
+                                                <div class="row gx-2">
+                                                    <div class="col-6">
+                                                        <div class="form-control-wrap">
+                                                            <input type="number" maxlength="2" min="1" max="12" class="form-control" id="cp1-card-exp-month" name="cp1-card-exp-month" placeholder="MM" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-control-wrap">
+                                                            <input type="number" minlength="4" maxlength="4" min="2022" class="form-control" id="cp1-card-exp-year" name="cp1-card-exp-year" placeholder="YYYY" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-card-cvv">CVV</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" minlength="3" maxlength="4" class="form-control" id="cp1-card-cvv" name="cp1-card-cvv" placeholder="222" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <div class="form-control-wrap">
+                                                    <ul class="custom-control-group gx-4">
+                                                        <li>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" name="cp1-save-card" id="cp1-save-card" value="follow_project">
+                                                                <label class="custom-control-label" for="cp1-save-card">Save Card Details</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nk-stepper-step text-center">
+                                    <h5 class="title mb-2">Your Are Done!</h5>
+                                    <p class="text-soft">Congrats! Successfully created your Profile</p>
+                                    <div class="gfx w-50 mx-auto">
+                                        {% include "base/svg.html" %}
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nk-stepper-pagination pt-4 gx-4 gy-2 stepper-pagination">
+                                <li class="step-prev"><button class="btn btn-dim btn-primary">Back</button></li>
+                                <li class="step-next"><button class="btn btn-primary">Continue</button></li>
+                                <li class="step-submit"><button class="btn btn-primary">Submit</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
