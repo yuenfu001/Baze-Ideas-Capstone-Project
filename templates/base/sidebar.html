@@ -6,7 +6,7 @@
             <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
         </div>
         <div class="nk-sidebar-brand">
-            <a href="html/index.html" class="logo-link nk-sidebar-logo">
+            <a href="{% url "index" %}" class="logo-link nk-sidebar-logo">
                 <img class="logo-light logo-img" src="{% static 'images/logo.png' %}" srcset="{% static 'images/logo2x.png' %} 2x" alt="logo">
                 <img class="logo-dark logo-img" src="{% static 'images/logo-dark.png' %}" srcset="{% static 'images/logo-dark2x.png' %} 2x" alt="logo-dark">
             </a>
@@ -20,7 +20,7 @@
                         {% comment %} <h6 class="overline-title text-primary-alt">Dashboards</h6> {% endcomment %}
                     </li><!-- .nk-menu-item -->
                     <li class="nk-menu-item">
-                        <a href="html/index.html" class="nk-menu-link">
+                        <a href="{% url "index" %}" class="nk-menu-link">
                             <span class="nk-menu-icon"><em class="icon ni ni-dashlite"></em></span>
                             <span class="nk-menu-text">Dashboard</span>
                         </a>
@@ -29,23 +29,6 @@
                     <li class="nk-menu-heading">
                         <h6 class="overline-title text-primary-alt">Sales Process</h6>
                     </li><!-- .nk-menu-heading -->
-                   
-                    <li class="nk-menu-item has-sub">
-                        <a href="#" class="nk-menu-link nk-menu-toggle">
-                            <span class="nk-menu-icon"><em class="icon ni ni-user-list"></em></span>
-                            <span class="nk-menu-text">Customer</span> <!--<span class="nk-menu-badge">New</span> -->
-                        </a>
-                        <ul class="nk-menu-sub">
-                            <li class="nk-menu-item">
-                                <a href="html/customer-list.html" class="nk-menu-link"><span class="nk-menu-text">Customer List</span></a>
-                            </li>
-                            <li class="nk-menu-item">
-                                <a href="html/customer-details.html" class="nk-menu-link"><span class="nk-menu-text">Customer Details</span></a>
-                            </li>
-                        </ul><!-- .nk-menu-sub -->
-                    </li><!-- .nk-menu-item -->
-                   
-                    
                     <li class="nk-menu-item">
                         <a href="{% url "lead_management_app:lead_generation" %}" class="nk-menu-link">
                             <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
@@ -60,7 +43,7 @@
                     </li><!-- .nk-menu-item -->
                     <li class="nk-menu-item">
                         <a href="{% url "lead_management_app:proposal_submission" %}" class="nk-menu-link">
-                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
                             <span class="nk-menu-text">Proposal Submission</span>
                         </a>
                     </li><!-- .nk-menu-item -->
@@ -88,14 +71,23 @@
                             <span class="nk-menu-text">Payment</span>
                         </a>
                     </li><!-- .nk-menu-item -->
-                    <li class="nk-menu-item">
-                        <a href="html/gallery.html" class="nk-menu-link">
-                            <span class="nk-menu-icon"><em class="icon ni ni-img"></em></span>
-                            <span class="nk-menu-text">Image Gallery</span>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-user-list"></em></span>
+                            <span class="nk-menu-text">Customer</span> <!--<span class="nk-menu-badge">New</span> -->
                         </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="html/customer-list.html" class="nk-menu-link"><span class="nk-menu-text">Customer List</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="html/customer-details.html" class="nk-menu-link"><span class="nk-menu-text">Customer Details</span></a>
+                            </li>
+                        </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
+                   
                     <li class="nk-menu-heading">
-                        <h6 class="overline-title text-primary-alt">Misc Pages</h6>
+                        <h6 class="overline-title text-primary-alt">CUstomer Management</h6>
                     </li><!-- .nk-menu-heading -->
                     <li class="nk-menu-item has-sub">
                         <a href="#" class="nk-menu-link nk-menu-toggle">
