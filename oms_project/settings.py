@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'forms_app',
     'base_app',
+    'lead_management_app'
 ]
 
 MIDDLEWARE = [

@@ -36,19 +36,25 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/project-card.html" class="nk-menu-link"><span class="nk-menu-text">Lead Generation</span></a>
+                                <a href="{% url "lead_management_app:lead_generation" %}" class="nk-menu-link"><span class="nk-menu-text"><em>Lead Generation</em></span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Client Engagement</span></a>
+                                <a href="{% url "lead_management_app:client_engagement" %}" class="nk-menu-link"><span class="nk-menu-text"><em>Client Engagement</em></span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Proposal Submission</span></a>
+                                <a href="{% url "lead_management_app:proposal_submission" %}" class="nk-menu-link"><span class="nk-menu-text"><em>Proposal Submission</em></span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">PO receipt</span></a>
+                                <a href="{% url "lead_management_app:quote_submission" %}" class="nk-menu-link"><span class="nk-menu-text"><em>Quote Submission</em></span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/project-list.html" class="nk-menu-link"><span class="nk-menu-text">Payment Receipt</span></a>
+                                <a href="{% url "lead_management_app:quote_acceptance" %}" class="nk-menu-link"><span class="nk-menu-text"><em>Final Quote Acceptance</em></span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{% url "lead_management_app:po_receipt" %}" class="nk-menu-link"><span class="nk-menu-text"><em>PO receipt </em></span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{% url "lead_management_app:deal_closure" %}" class="nk-menu-link"><span class="nk-menu-text"><em>Payment</em></span> <span class="nk-menu-badge">Deal CLosure</span></a>
                             </li>
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
@@ -56,7 +62,7 @@
                     <li class="nk-menu-item has-sub">
                         <a href="#" class="nk-menu-link nk-menu-toggle">
                             <span class="nk-menu-icon"><em class="icon ni ni-user-list"></em></span>
-                            <span class="nk-menu-text">Customer</span><span class="nk-menu-badge">New</span>
+                            <span class="nk-menu-text">Customer</span> <!--<span class="nk-menu-badge">New</span> -->
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
