@@ -153,7 +153,7 @@
                                     <hr/>
                                     <h5 class="title mb-4">Service Request Details</h5> 
                                     <div class="row g-3">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Select Service Type</label>
                                                 <div class="form-control-wrap">
@@ -168,7 +168,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">If Collaboration, Select power</label>
                                                 <div class="form-control-wrap">
@@ -193,7 +193,7 @@
                                             </div>
                                         </div>
                                        
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">If Collaboration, Select space</label>
                                                 <div class="form-control-wrap">
@@ -233,7 +233,7 @@
                                                 </div>
                                             </div>
                                         </div>                                  
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Interface type</label>
                                                 <div class="form-control-wrap">
@@ -244,7 +244,7 @@
                                                 </div>
                                             </div>
                                         </div>                                 
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Bandwidth</label>
                                                 <div class="form-control-wrap">
@@ -272,7 +272,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-name">Number of intended users</label>
                                                 <div class="form-control-wrap">
@@ -285,7 +285,7 @@
                                 <div class="nk-stepper-step">
                                     <h5 class="title mb-3">LAN Request Information(If applicable)</h5>
                                     <div class="row g-3">
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-size">Mode of connection</label>
                                                     <div class="form-control-wrap">
@@ -297,7 +297,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-size">Router available?</label>
                                                     <div class="form-control-wrap">
@@ -308,7 +308,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-size">Preferred router type: (Kindly specify)</label>
                                                     <div class="form-control-wrap">
@@ -316,7 +316,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-size">Switch available?</label>
                                                     <div class="form-control-wrap">
@@ -327,15 +327,15 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <div class="form-group">
-                                                    <label class="form-label" for="cp1-team-name">Preferred switch type: (Kindly specify)</label>
+                                                    <label class="form-label" for="cp1-team-name">Preferred switch type</label>
                                                     <div class="form-control-wrap">
                                                         <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-size">Existing Equipment</label>
                                                     <div class="form-control-wrap">
@@ -343,7 +343,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-size">Rack space available?</label>
+                                                    <div class="form-control-wrap">
+                                                        <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-size">Rack space available?</label>
                                                     <div class="form-control-wrap">
@@ -355,19 +366,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
-                                                <div class="form-group">
-                                                    <label class="form-label" for="cp1-team-size">Rack space available?</label>
-                                                    <div class="form-control-wrap">
-                                                        <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
-                                                            <option value="Yes">Yes</option>
-                                                            <option value="No">No</option>
-                                                        
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-name">Type/Size of Rack</label>
                                                     <div class="form-control-wrap">
@@ -375,7 +374,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-name">Specify if Others above</label>
                                                     <div class="form-control-wrap">
@@ -383,7 +382,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-3">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-name">You want rack supplied?</label>
                                                     <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
@@ -393,7 +392,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-5">
                                                 <div class="form-group">
                                                     <label class="form-label" for="cp1-team-name">Power terminals available for new equipment?</label>
                                                     <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
@@ -407,7 +406,7 @@
                                     <hr/>
                                     <h5 class="title mb-3">VPN/Backhaul</h5>
                                     <div class="row g-3">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Mode</label>
                                                 <div class="form-control-wrap">
@@ -417,7 +416,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Point A</label>
                                                 <div class="form-control-wrap">
@@ -427,7 +426,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Point B</label>
                                                 <div class="form-control-wrap">
@@ -435,7 +434,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">VLAN Tag</label>
                                                 <div class="form-control-wrap">
@@ -445,7 +444,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-name">MTU size</label>
                                                 <div class="form-control-wrap">
@@ -453,7 +452,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Latency</label>
                                                 <div class="form-control-wrap">
@@ -487,7 +486,7 @@
                                     <h5 class="title mb-3">VPS Information</h5>
                                     <p>Please fill up your billing info carefull for un-interfered service.</p>
                                     <div class="row g-3">
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-name-on-card">Number of Virtual Machines</label>
                                                 <div class="form-control-wrap">
@@ -495,7 +494,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-card-number">CPU(vCores)</label>
                                                 <div class="form-control-wrap">
@@ -503,7 +502,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-card-number">Memory(GB)</label>
                                                 <div class="form-control-wrap">
@@ -511,7 +510,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-card-number">Storage(GB)</label>
                                                 <div class="form-control-wrap">
@@ -520,7 +519,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-card-cvv">Operatiing System(OS)</label>
                                                 <div class="form-control-wrap">
@@ -528,7 +527,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-card-cvv">Suite</label>
                                                 <div class="form-control-wrap">
@@ -544,10 +543,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <p> </p><br/>
-                                        
-
                                     </div>
                                     <hr/>
                                     <h5 class="title mb-3">Voice Request Information</h5>
