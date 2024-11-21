@@ -12,14 +12,6 @@
                             <li>
                                 <div class="step-item">
                                     <div class="step-text">
-                                        <div class="lead-text">Profile Type</div>
-                                        <div class="sub-text">Choose Profile</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="step-item">
-                                    <div class="step-text">
                                         <div class="lead-text">Customer Details</div>
                                         <div class="sub-text">Enter the customer information</div>
                                     </div>
@@ -33,15 +25,25 @@
                                     </div>
                                 </div>
                             </li>
+                            
                             <li>
                                 <div class="step-item">
                                     <div class="step-text">
-                                        <div class="lead-text">LAN Request Info</div>
+                                        <div class="lead-text">LAN Request/VPN Backhaul Information</div>
                                         <div class="sub-text">Looking for more information</div>
                                     </div>
                                 </div>
                             </li>
                             
+                            <li>
+                                <div class="step-item">
+                                    <div class="step-text">
+                                        <div class="lead-text">VPS/Voice Request Information</div>
+                                        <div class="sub-text">Choose Profile</div>
+                                    </div>
+                                </div>
+                            </li>
+
                             <li>
                                 <div class="step-item">
                                     <div class="step-text">
@@ -57,40 +59,11 @@
                     <div class="card-inner">
                         <div class="nk-stepper-content">
                             <div class="nk-stepper-steps stepper-steps">
-                                <div class="nk-stepper-step">
-                                    <h5 class="title mb-3">Choose Profile Type</h5>
-                                    <p>Account registration allows for remembering details about the user, product wish lists, preferences, interests, shipping and billing addresses, VAT number for </p>
-                                    <ul class="row g-3">
-                                        <li class="col-6">
-                                            <div class="custom-control custom-control-sm custom-radio pro-control custom-control-full">
-                                                <input type="radio" class="custom-control-input" name="cp1-profile-type" id="cp1-profile-personal" value="cp1-profile-personal" required>
-                                                <label class="custom-control-label" for="cp1-profile-personal">
-                                                    <span class="d-flex flex-column text-center px-sm-3">
-                                                        <em class="icon icon-circle icon-circle-lg bg-teal ni ni-user"></em>
-                                                        <span class="lead-text mb-1 mt-3">Personal Profile</span>
-                                                        <span class="sub-text">Prioritize and solve your tasks in short time cycles.</span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li class="col-6">
-                                            <div class="custom-control custom-control-sm custom-radio pro-control custom-control-full">
-                                                <input type="radio" class="custom-control-input" name="cp1-profile-type" id="cp1-profile-corporate" value="cp1-profile-corporate" required>
-                                                <label class="custom-control-label" for="cp1-profile-corporate">
-                                                    <span class="d-flex flex-column text-center px-sm-3">
-                                                        <em class="icon icon-circle icon-circle-lg bg-orange ni ni-briefcase"></em>
-                                                        <span class="lead-text mb-1 mt-3">Corporate Profile</span>
-                                                        <span class="sub-text">Keep a constant workflow on independent tasks.</span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                                
                                 <div class="nk-stepper-step">
                                     <h5 class="title mb-4">Customer Details</h5>
                                     <div class="row g-3">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-first-name">Company Name</label>
                                                 <div class="form-control-wrap">
@@ -98,7 +71,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-last-name">Company Address</label>
                                                 <div class="form-control-wrap">
@@ -107,7 +80,7 @@
                                             </div>
                                         </div>
                                        
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-last-name">Coordinates (Lat, Long)</label>
                                                 <div class="form-control-wrap">
@@ -115,7 +88,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-last-name">Closest Landmark</label>
                                                 <div class="form-control-wrap">
@@ -123,7 +96,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-last-name">Contact Person</label>
                                                 <div class="form-control-wrap">
@@ -132,7 +105,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-last-name">Designation/Job Title</label>
                                                 <div class="form-control-wrap">
@@ -141,7 +114,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-last-name">Department</label>
                                                 <div class="form-control-wrap">
@@ -150,7 +123,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-last-name">Mobile Number</label>
                                                 <div class="form-control-wrap">
@@ -159,7 +132,7 @@
                                             </div>
                                         </div>
                                        
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-contact-email">Contact Email</label>
                                                 <div class="form-control-wrap">
@@ -177,11 +150,10 @@
                                             </div> 
                                         -->
                                     </div>
-                                </div>
-                                <div class="nk-stepper-step">
-                                    <h5 class="title mb-3">Service Request Details</h5>
+                                    <hr/>
+                                    <h5 class="title mb-4">Service Request Details</h5> 
                                     <div class="row g-3">
-                                        <div class="col-12">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Select Service Type</label>
                                                 <div class="form-control-wrap">
@@ -196,7 +168,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">If Collaboration, Select power</label>
                                                 <div class="form-control-wrap">
@@ -220,7 +192,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                       
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">If Collaboration, Select space</label>
                                                 <div class="form-control-wrap">
@@ -239,7 +212,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Last mile mode of connection:</label>
                                                 <div class="form-control-wrap">
@@ -252,83 +225,374 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-name">If Microwave; confirm mast availability and height</label>
                                                 <div class="form-control-wrap">
-                                                    <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name" required>
+                                                    <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12">
+                                        </div>                                  
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label" for="cp1-team-size">Interface type</label>
                                                 <div class="form-control-wrap">
-                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)" required>
-                                                        <option value="1U">ELECTRICAL</option>
-                                                        <option value="2U">OPTICAL</option>
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
+                                                        <option value="ELECTRICAL">ELECTRICAL</option>
+                                                        <option value="OPTICAL">OPTICAL</option>
                                                     </select>
+                                                </div>
+                                            </div>
+                                        </div>                                 
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Bandwidth</label>
+                                                <div class="form-control-wrap">
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
+                                                        <option value="1Mbps">1Mbps</option>
+                                                        <option value="2Mbps">2Mbps</option>
+                                                        <option value="3Mbps">3Mbps</option>
+                                                        <option value="4Mbps">4Mbps</option>
+                                                        <option value="5Mbps">5Mbps</option>
+                                                        <option value="6Mbps">6Mbps</option>
+                                                        <option value="7Mbps">7Mbps</option>
+                                                        <option value="8Mbps">8Mbps</option>
+                                                        <option value="9Mbps">9Mbps</option>
+                                                        <option value="10Mbps">10Mbps</option>
+                                                        <option value="20Mbps">20Mbps</option>
+                                                        <option value="30Mbps">30Mbps</option>
+                                                        <option value="50Mbps">50Mbps</option>
+                                                        <option value="1STM1">1STM1</option>
+                                                        <option value="2STM1">2STM1</option>
+                                                        <option value="3STM1">3STM1</option>
+                                                        <option value="1Gbps">1Gbps</option>
+                                                        <option value="Others">Others</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-name">Number of intended users</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="nk-stepper-step">
-                                    <h5 class="title mb-3">Billing info</h5>
+                                    <h5 class="title mb-3">LAN Request Information(If applicable)</h5>
+                                    <div class="row g-3">
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-size">Mode of connection</label>
+                                                    <div class="form-control-wrap">
+                                                        <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Internet" required>
+                                                            <option value="01-10">Wired</option>
+                                                            <option value="10-20">Wireless</option>
+                                                            <option value="20-30">Wired + Wireless</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-size">Router available?</label>
+                                                    <div class="form-control-wrap">
+                                                        <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)" required>
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-size">Preferred router type: (Kindly specify)</label>
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-size">Switch available?</label>
+                                                    <div class="form-control-wrap">
+                                                        <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)" required>
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-name">Preferred switch type</label>
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-size">Existing Equipment</label>
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-size">Rack space available?</label>
+                                                    <div class="form-control-wrap">
+                                                        <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-size">Rack space available?</label>
+                                                    <div class="form-control-wrap">
+                                                        <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
+                                                        
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-name">Type/Size of Rack</label>
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-name">Specify if Others above</label>
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-name">You want rack supplied?</label>
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="form-group">
+                                                    <label class="form-label" for="cp1-team-name">Power terminals available for new equipment?</label>
+                                                    <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)">
+                                                        <option value="Yes">Yes</option>
+                                                        <option value="No">No</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <hr/>
+                                    <h5 class="title mb-3">VPN/Backhaul</h5>
+                                    <div class="row g-3">
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Mode</label>
+                                                <div class="form-control-wrap">
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Enter Mode">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Point A</label>
+                                                <div class="form-control-wrap">
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Point B</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">VLAN Tag</label>
+                                                <div class="form-control-wrap">
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-name">MTU size</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Latency</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">Jilter</label>
+                                                <div class="form-control-wrap">
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-team-size">For P2MP, kindly populate sink locations</label>
+                                                <div class="form-control-wrap">
+                                                    <div class="form-control-wrap">
+                                                        <input type="text" class="form-control" id="cp1-team-name" name="cp1-team-name" placeholder="Team name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nk-stepper-step">
+                                    <h5 class="title mb-3">VPS Information</h5>
                                     <p>Please fill up your billing info carefull for un-interfered service.</p>
                                     <div class="row g-3">
-                                        <div class="col-12">
+                                        <div class="col-4">
                                             <div class="form-group">
-                                                <label class="form-label" for="cp1-name-on-card">Name On Card</label>
+                                                <label class="form-label" for="cp1-name-on-card">Number of Virtual Machines</label>
                                                 <div class="form-control-wrap">
-                                                    <input type="text" class="form-control" id="cp1-name-on-card" name="cp1-name-on-card" placeholder="NAME" required>
+                                                    <input type="text" class="form-control" id="cp1-name-on-card" name="cp1-name-on-card" placeholder="1 , 2, 5">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        <div class="col-4">
                                             <div class="form-group">
-                                                <label class="form-label" for="cp1-card-number">Card Number</label>
+                                                <label class="form-label" for="cp1-card-number">CPU(vCores)</label>
                                                 <div class="form-control-wrap">
-                                                    <input type="number" minlength="12" maxlength="12" class="form-control" id="cp1-card-number" name="cp1-card-number" placeholder="2222 3333 4444 5555" required>
+                                                    <input type="number" minlength="12" maxlength="12" class="form-control" id="cp1-card-number" name="cp1-card-number" placeholder="Dual core, quad core, 6 cores">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-4">
                                             <div class="form-group">
-                                                <label class="form-label" for="cp1-card-exp-month">Expiration Date</label>
-                                                <div class="row gx-2">
-                                                    <div class="col-6">
-                                                        <div class="form-control-wrap">
-                                                            <input type="number" maxlength="2" min="1" max="12" class="form-control" id="cp1-card-exp-month" name="cp1-card-exp-month" placeholder="MM" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="form-control-wrap">
-                                                            <input type="number" minlength="4" maxlength="4" min="2022" class="form-control" id="cp1-card-exp-year" name="cp1-card-exp-year" placeholder="YYYY" required>
-                                                        </div>
-                                                    </div>
+                                                <label class="form-label" for="cp1-card-number">Memory(GB)</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" minlength="12" maxlength="12" class="form-control" id="cp1-card-number" name="cp1-card-number" placeholder="8GB , 16GB">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-4">
                                             <div class="form-group">
-                                                <label class="form-label" for="cp1-card-cvv">CVV</label>
+                                                <label class="form-label" for="cp1-card-number">Storage(GB)</label>
                                                 <div class="form-control-wrap">
-                                                    <input type="number" minlength="3" maxlength="4" class="form-control" id="cp1-card-cvv" name="cp1-card-cvv" placeholder="222" required>
+                                                    <input type="number" minlength="12" maxlength="12" class="form-control" id="cp1-card-number" name="cp1-card-number" placeholder="100GB , 125GB, 250GB, 500GB, 1TB">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
+                                        
+                                        <div class="col-sm-4">
                                             <div class="form-group">
+                                                <label class="form-label" for="cp1-card-cvv">Operatiing System(OS)</label>
                                                 <div class="form-control-wrap">
-                                                    <ul class="custom-control-group gx-4">
-                                                        <li>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input" name="cp1-save-card" id="cp1-save-card" value="follow_project">
-                                                                <label class="custom-control-label" for="cp1-save-card">Save Card Details</label>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
+                                                    <input type="number" minlength="3" maxlength="4" class="form-control" id="cp1-card-cvv" name="cp1-card-cvv" placeholder="222">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-card-cvv">Suite</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" minlength="3" maxlength="4" class="form-control" id="cp1-card-cvv" name="cp1-card-cvv" placeholder="Something here">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-card-cvv">Kindly provide other details</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" minlength="3" maxlength="4" class="form-control" id="cp1-card-cvv" name="cp1-card-cvv" placeholder="222">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                    <h5 class="title mb-3">Voice Request Information</h5>
+                                    <p>Please fill up your billing info carefull for un-interfered service.</p>
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-name-on-card">Preffered switch type (Kindly specify)</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-name-on-card" name="cp1-name-on-card" placeholder="1 , 2, 5">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-card-number">IP phones required?</label>
+                                                <select class="form-select js-select2" id="cp1-team-size" name="cp1-team-size" data-placeholder="Choose Power(KW)" required>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-card-number">Specify type and number of IP Phones</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" minlength="12" maxlength="12" class="form-control" id="cp1-card-number" name="cp1-card-number" placeholder="8GB , 16GB">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-card-number">Voice gateway type: (Kindly specify)</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" minlength="12" maxlength="12" class="form-control" id="cp1-card-number" name="cp1-card-number" placeholder="100GB , 125GB, 250GB, 500GB, 1TB">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nk-stepper-step">
+                                    <h5 class="title mb-3">Other Details</h5>
+                                    <p>Please fill up your billing info carefull for un-interfered service.</p>
+                                    <div class="row g-3">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="cp1-name-on-card">Kindly provide other details (If any)</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" id="cp1-name-on-card" name="cp1-name-on-card" placeholder="Enter specific details here">
                                                 </div>
                                             </div>
                                         </div>
