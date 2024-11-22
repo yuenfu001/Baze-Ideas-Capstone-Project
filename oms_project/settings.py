@@ -95,6 +95,26 @@ DATABASES = {
     }
 }
 
+# CORS_ALLOW_ALL_ORIGINS = True
+# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+
+# # cross-site scripting xss
+# SECURE_BROWSER_XSS_FILTER = True
+# SECURE_CONTENT_TYPE_NOSNIFF = True
+
+# # SSL redirect
+
+# SECURE_SSL_REDIRECT = True
+
+# # HTTP strict Transport Security
+
+# SECURE_HSTS_SECONDS = 86400
+# SECURE_HSTS_PRELOAD = True
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
