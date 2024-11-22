@@ -26,9 +26,11 @@ SECRET_KEY = config("key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("debug")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 DEFAULT_FILE_STORAGE = "django.core.files.storage.FileSystemStorage"  # use the apprropriate storage for backend here
 
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
+CORS_ALLOW_ALL_ORIGINS= True
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,15 +41,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'drf_yasg',
+    'account',
     'forms_app',
     'base_app',
     'lead_management_app',
+    'lead_management_serializer',
     'rest_framework'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
