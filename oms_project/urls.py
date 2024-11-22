@@ -18,6 +18,22 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path, include
+from rest_framework import permissions
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+
+scheme_view = get_schema_view(
+    openapi.Info(
+        title='Lead managment client form API',
+        default_version='Version 1',
+        description='Endpoint for client form data',
+        terms_of_service='',
+        contact=openapi.Contact(email='liuyuenfu@gmail.com'),
+        license=openapi.License(name='D191t8l9h0x7')
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,)
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +41,8 @@ urlpatterns = [
     path('account/', include('account.urls')),
     path('lead-management/', include('lead_management_app.urls')),
     path('forms/', include('forms_app.urls')),
+    path("schema", scheme_view.with_ui('swagger', cache_timeout=0),name='schema-swagger-ui'),
+    path("docs", scheme_view.with_ui('redoc', cache_timeout=0),name='schema-redoc'),
 ]
 if settings.DEBUG:
     urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
