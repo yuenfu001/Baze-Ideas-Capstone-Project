@@ -1,9 +1,9 @@
 from django.db import models
-
+import uuid
 # Create your models here.
 
 class ServiceRequestForm(models.Model):
-
+    id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
     client_company_name = models.CharField(max_length=100, blank=True, null=True)
     client_company_address = models.CharField(max_length=400, blank=True, null=True)
     client_coordinates = models.CharField(max_length=100, blank=True, null=True)
