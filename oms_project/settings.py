@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'forms_app',
     'account',
+    'forms_app',
     'base_app',
     'lead_management_app',
     'rest_framework'
