@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import ServiceRequestForm
+from forms_app.models import ServiceRequestForm
 
-class ClientFormData(serializers.ModelSerializer):
+class ClientFormDataSerializer(serializers.ModelSerializer):
     class Meta:
         model=ServiceRequestForm
         fields = [
