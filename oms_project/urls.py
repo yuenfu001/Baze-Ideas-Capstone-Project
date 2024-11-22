@@ -40,6 +40,7 @@ urlpatterns = [
     path('', include('base_app.urls')),
     path('account/', include('account.urls')),
     path('lead-management/', include('lead_management_app.urls')),
+    path('lead-management-serializer/', include('lead_management_serializer.urls')),
     path('forms/', include('forms_app.urls')),
     path("schema", scheme_view.with_ui('swagger', cache_timeout=0),name='schema-swagger-ui'),
     path("docs", scheme_view.with_ui('redoc', cache_timeout=0),name='schema-redoc'),

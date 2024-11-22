@@ -39,11 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'drf_yasg'
+    'drf_yasg',
     'account',
     'forms_app',
     'base_app',
     'lead_management_app',
+    'lead_management_serializer',
     'rest_framework'
 ]
 
