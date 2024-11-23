@@ -26,7 +26,7 @@ SECRET_KEY = config("key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("debug")
 
-ALLOWED_HOSTS = ["*"]
+
 DEFAULT_FILE_STORAGE = "django.core.files.storage.FileSystemStorage"  # use the apprropriate storage for backend here
 
 CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
@@ -47,11 +47,19 @@ INSTALLED_APPS = [
     'base_app',
     'lead_management_app',
     'lead_management_serializer',
-    'rest_framework'
+    'rest_framework',
+    'corsheaders',
 ]
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+SWAGGER_SETTINGS = {"SECURITY_DEFINITIONS": {"Basic": {"type": "basic"}}}
+
+DEFAULT_FILE_STORAGE = "django.core.files.storage.FileSystemStorage"  # use the apprropriate storage for backend here
+
+
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
