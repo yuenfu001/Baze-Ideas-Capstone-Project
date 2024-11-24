@@ -21,6 +21,7 @@ from django.urls import path, include
 from rest_framework import permissions
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
+from django.contrib.auth import views as auth_views
 
 scheme_view = get_schema_view(
     openapi.Info(
@@ -36,14 +37,27 @@ scheme_view = get_schema_view(
 )
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('', include('base_app.urls')),
-    path('account/', include('account.urls')),
+    path('', include('account.urls')),
     path('lead-management/', include('lead_management_app.urls')),
     path('lead-management-serializer/', include('lead_management_serializer.urls')),
     path('forms/', include('forms_app.urls')),
     path("schema", scheme_view.with_ui('swagger', cache_timeout=0),name='schema-swagger-ui'),
     path("docs", scheme_view.with_ui('redoc', cache_timeout=0),name='schema-redoc'),
+
+    path('password-reset/',
+         auth_views.PasswordResetView.as_view(template_name='forms/auth/reset_password_form.html'),
+         name='password_reset'),
+    path('password-reset/done/',
+         auth_views.PasswordResetDoneView.as_view(template_name='forms/auth/reset_password_done.html'),
+         name='password_reset_done'),
+    path('password-reset/confirm/<uidb64>/<token>/',
+         auth_views.PasswordResetConfirmView.as_view(template_name='forms/auth/password_reset_confirm.html'),
+         name='password_reset_confirm'),
+    path('password-reset/complete/',
+         auth_views.PasswordResetCompleteView.as_view(template_name='forms/auth/reset_password_complete.html'),
+         name='password_reset_complete'),
 ]
 if settings.DEBUG:
     urlpatterns +=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
