@@ -48,14 +48,30 @@
                                                {{ message }}
                                         </div>
                                     {% endfor %}
-                                <form method="post" action="{% url 'account:loginUser' %}">
+                                <form method="post" action="{% url 'account:registerUser' %}">
                                     {% csrf_token %}
                                     <div class="form-group">
                                         <div class="form-label-group">
-                                            <label class="form-label" for="default-01" >Email or Username</label>
+                                            <label class="form-label" for="default-01" >First Name</label>
                                         </div>
                                         <div class="form-control-wrap">
-                                            <input type="email" class="form-control form-control-lg" id="default-01" placeholder="Enter your email address" name="email">
+                                            <input type="text" class="form-control form-control-lg" id="default-01" placeholder="Enter your email address" name="first_name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-label-group">
+                                            <label class="form-label" for="default-01" >Last Name</label>
+                                        </div>
+                                        <div class="form-control-wrap">
+                                            <input type="text" class="form-control form-control-lg" id="default-02" placeholder="Enter your email address" name="last_name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-label-group">
+                                            <label class="form-label" for="default-01" >Email</label>
+                                        </div>
+                                        <div class="form-control-wrap">
+                                            <input type="email" class="form-control form-control-lg" id="default-03" placeholder="Enter your email address" name="email">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -72,11 +88,22 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
+                                        <div class="form-label-group">
+                                            <label class="form-label" for="confirm_password">Confirm Passcode</label>
+                                            <a class="link link-primary link-sm" href="{% url 'account:forgotPassword'%}">Forgot Code?</a>
+                                        </div>
+                                        <div class="form-control-wrap">
+                                            <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="confirm_password">
+                                                <em class="passcode-icon icon-show icon ni ni-eye"></em>
+                                                <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
+                                            </a>
+                                            <input type="password" class="form-control form-control-lg" id="confirm_password" placeholder="Enter your passcode" name="confirm_password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
                                         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
                                     </div>
                                 </form>
-                                <div class="form-note-s2 pt-4"> New on our platform? <a href="{% url 'account:UserReg' %}">Create an account</a>
-                                </div>
 
                             </div>
                         </div>
