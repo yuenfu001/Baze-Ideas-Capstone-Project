@@ -37,7 +37,7 @@ scheme_view = get_schema_view(
 )
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('base_app.urls')),
     path('', include('account.urls')),
     path('lead-management/', include('lead_management_app.urls')),

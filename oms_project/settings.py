@@ -71,7 +71,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'oms_project.urls'
-AUTH_USER_MODEL = 'account.Account'
 
 TEMPLATES = [
     {
