@@ -64,7 +64,7 @@ class ServiceRequestForm(models.Model):
 
     # validation fields
     lead_generation_status = models.BooleanField(default=False)
-    client_engagment_status = models.BooleanField(default=False)
+    client_engagement_status = models.BooleanField(default=False)
     proposal_submission_status = models.BooleanField(default=False)
     quote_submission_status = models.BooleanField(default=False)
     quote_acceptance_status = models.BooleanField(default=False)
