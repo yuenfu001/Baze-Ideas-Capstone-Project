@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-from account.form.forms import EmailAuthenticationForm, RegisterForm
+from account.form.forms import RegisterForm
 from django.contrib.auth.decorators import login_required
 # Create your views here.#
 
@@ -10,7 +10,6 @@ def register_request(request):
     if request.method == "POST":
         _mutable = request.POST._mutable
         request.POST._mutable = True
-        request.POST['username'] = request.POST['email']
         form = RegisterForm(request.POST)
         if form.is_valid():
             form.save()
@@ -40,13 +39,11 @@ def login_request(request):
     if user.is_authenticated:
         return redirect("/dashboard")
     if request.POST:
-
         email = request.POST.get('email')
         password = request.POST.get('password')
-        user = EmailAuthenticationForm(request.POST)
-        if user.is_valid():
-            form = user.get_user()
-            login(request, form)
+        user = authenticate(email=email, password=password)
+        if user:
+            login(request, user)
             messages.success(request, "Logged In")
             return redirect("/dashboard")
         else:
