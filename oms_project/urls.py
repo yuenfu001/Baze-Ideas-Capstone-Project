@@ -25,7 +25,7 @@ from django.contrib.auth import views as auth_views
 
 scheme_view = get_schema_view(
     openapi.Info(
-        title='Lead managment client form API',
+        title='Lead management client form API',
         default_version='Version 1',
         description='Endpoint for client form data',
         terms_of_service='',
