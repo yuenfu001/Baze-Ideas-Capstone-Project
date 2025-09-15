@@ -61,10 +61,10 @@ Through this project, I strengthened skills in:
 
 ## 📂 Project Structure  
 ```bash
-├── data/                # Raw and cleaned datasets
-├── visuals/             # Dashboards, charts, and screenshots
-├── reports/             # Final presentation and documentation
-└── README.md            # Project documentation
+├── Data for Sales Analysis v2.xlsx              # Raw and cleaned datasets
+├── FINAL IDEAS CAPSTONE PROJECT.pdf             # Dashboards, charts, and screenshots
+├── README.md                                    # Project documentation 
+└── capstone project dashoard v1.pdf             # Final presentation and documentation
 ```
 
 ---
